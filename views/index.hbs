@@ -1,0 +1,101 @@
+<html>
+
+<head>
+    <script src="https://cdn.socket.io/4.3.2/socket.io.min.js"
+        integrity="sha384-KAZ4DtjNhLChOB/hxXuKqhMLYvx3b5MlT55xPEiNmREKRzeEm+RVPlTnAn0ajQNs"
+        crossorigin="anonymous"></script>
+    <script>
+
+        const socket = io('http://localhost:3000');
+
+        socket.on('connect', function () {
+            console.log('Connected');
+        });
+
+
+
+        function UpdateQRCode(val) {
+            const qr = "https://api.mimfa.net/qrcode?value=" + encodeURIComponent(val) + "&as=value"
+            console.log(`qr:`, qr)
+
+            document.getElementById("qrcode").setAttribute("src", qr);
+            document.getElementById("title").innerText = "Scan the qr code to connect"
+
+        }
+
+
+
+        let nums = [];
+        let msg = ""
+
+        function UpdateReady(val) {
+            document.getElementById("title").innerText = "Ready to send Messages"
+            const form = document.getElementById("form")
+
+            form.style.display = 'flex'
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault()
+
+                socket.emit('send', { numbers: nums, message: msg })
+            })
+        }
+
+        function handleNumInput() {
+            const input = document.getElementById("num")
+
+            input.addEventListener('change', function (e) {
+                const value = e.target.value || ''
+
+                if (value.includes(',')) {
+                    nums = values.split(',')
+                } else {
+                    nums = [value]
+                }
+            })
+        }
+
+        function handleMsg() {
+            const textarea = document.getElementById("msg")
+
+            textarea.addEventListener('change', function (e) {
+                const value = e.target.value || ''
+
+                msg = value
+            })
+        }
+
+        socket.on('qr', function (data) {
+            UpdateQRCode(data);
+        })
+
+        socket.on('ready', function (data) {
+            console.log('Ready')
+            UpdateReady()
+            handleMsg()
+            handleNumInput()
+        });
+
+        socket.on('exception', function (data) {
+            console.log('event', data);
+        });
+
+        socket.on('disconnect', function () {
+            console.log('Disconnected');
+        });
+    </script>
+</head>
+
+<body>
+    <h1 id="title">Waiting qr code to load</h1>
+
+    <iframe id="qrcode" src="" width="250" height="250"></iframe>
+
+    <form id="form" style="display: none; flex-direction: column">
+        <input style="width: 400px; height: 50px" placeholder="Type the numbers separated by commas" id="num" />
+        <textarea style="width: 400px; height: 300px" placeholder="Type the message" id="msg"></textarea>
+        <button type="submit">Send</button>
+    </form>
+</body>
+
+</html>

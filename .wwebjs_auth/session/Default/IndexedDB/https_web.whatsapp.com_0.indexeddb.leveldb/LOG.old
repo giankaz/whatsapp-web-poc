@@ -1,0 +1,44 @@
+2024/01/11-10:28:04.889 6046 Reusing MANIFEST /home/giankaz/Desktop/bft/DISPARO_PRO/disparopro_microsservices/apps/poc1/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/01/11-10:28:04.890 6046 Recovering log #779
+2024/01/11-10:28:04.929 6046 Reusing old log /home/giankaz/Desktop/bft/DISPARO_PRO/disparopro_microsservices/apps/poc1/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000779.log 
+2024/01/11-10:28:21.649 6049 Level-0 table #797: started
+2024/01/11-10:28:21.682 6049 Level-0 table #797: 1107155 bytes OK
+2024/01/11-10:28:21.684 6049 Delete type=0 #779
+2024/01/11-10:28:23.301 6046 Compacting 1@0 + 0@1 files
+2024/01/11-10:28:23.331 6046 Generated table #798@0: 12403 keys, 545528 bytes
+2024/01/11-10:28:23.332 6046 Generated table #799@0: 92 keys, 2608 bytes
+2024/01/11-10:28:23.332 6046 Compacted 1@0 + 0@1 files => 548136 bytes
+2024/01/11-10:28:23.333 6046 compacted to: files[ 0 3 12 0 0 0 0 ]
+2024/01/11-10:28:23.334 6046 Delete type=2 #797
+2024/01/11-10:28:25.340 6049 Compacting 1@1 + 10@2 files
+2024/01/11-10:28:25.471 6049 Generated table #800@1: 48638 keys, 2233367 bytes
+2024/01/11-10:28:25.516 6049 Generated table #801@1: 3051 keys, 2161754 bytes
+2024/01/11-10:28:25.579 6049 Generated table #802@1: 3420 keys, 2159690 bytes
+2024/01/11-10:28:25.653 6049 Generated table #803@1: 4315 keys, 2167188 bytes
+2024/01/11-10:28:25.757 6049 Generated table #804@1: 14464 keys, 2179081 bytes
+2024/01/11-10:28:25.942 6049 Generated table #805@1: 27567 keys, 2265577 bytes
+2024/01/11-10:28:26.057 6049 Generated table #806@1: 27380 keys, 2252604 bytes
+2024/01/11-10:28:26.121 6049 Generated table #807@1: 11585 keys, 2138041 bytes
+2024/01/11-10:28:26.255 6049 Generated table #808@1: 102723 keys, 2254080 bytes
+2024/01/11-10:28:26.374 6049 Generated table #809@1: 95553 keys, 2115990 bytes
+2024/01/11-10:28:26.374 6049 Compacted 1@1 + 10@2 files => 21927372 bytes
+2024/01/11-10:28:26.376 6049 compacted to: files[ 0 2 12 0 0 0 0 ]
+2024/01/11-10:30:24.060 6046 Compacting 1@1 + 2@2 files
+2024/01/11-10:30:24.155 6046 Generated table #810@1: 101738 keys, 2252331 bytes
+2024/01/11-10:30:24.162 6046 Generated table #811@1: 7151 keys, 168331 bytes
+2024/01/11-10:30:24.162 6046 Compacted 1@1 + 2@2 files => 2420662 bytes
+2024/01/11-10:30:24.163 6046 compacted to: files[ 0 1 12 0 0 0 0 ]
+2024/01/11-10:30:24.163 6046 Delete type=2 #785
+2024/01/11-10:30:24.163 6046 Delete type=2 #798
+2024/01/11-10:30:24.163 6046 Delete type=2 #786
+2024/01/11-10:30:24.163 6046 Delete type=2 #793
+2024/01/11-10:30:24.163 6046 Delete type=2 #787
+2024/01/11-10:30:24.163 6046 Delete type=2 #799
+2024/01/11-10:30:24.163 6046 Delete type=2 #791
+2024/01/11-10:30:24.163 6046 Delete type=2 #794
+2024/01/11-10:30:24.163 6046 Delete type=2 #789
+2024/01/11-10:30:24.163 6046 Delete type=2 #788
+2024/01/11-10:30:24.163 6046 Delete type=2 #792
+2024/01/11-10:30:24.163 6046 Delete type=2 #783
+2024/01/11-10:30:24.164 6046 Delete type=2 #784
+2024/01/11-10:30:24.164 6046 Delete type=2 #790
